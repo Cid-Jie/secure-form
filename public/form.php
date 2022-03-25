@@ -15,15 +15,16 @@
         
         <div>
             <label for="name">Firstname / Lastname&nbsp; :</label>
-            <input type="text" id="name" name="user_name">
+            <input type="text" id="name" name="user_name" placeholder='Your first and last name is required' required>
         </div>
         <div>
             <label for="mail">E-mail&nbsp; :</label>
-            <input type="email" id="email" name="user_mail">
+            <input type="email" id="email" name="user_mail" placeholder="example@example.com" required>
         </div>
         <div>
             <label for="phone">Phone number : </label>
-            <input type="tel" id="phone" name="user_phone">
+            <input type="tel" id="phone" name="user_phone" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}"
+            placeholder="format : 01.23.45.67.89" required>
         </div>
         <div>
             <label for="subject"> Choose a subject : </label>
@@ -36,7 +37,7 @@
         </div>
         <div>
             <label for="msg">Message : </label>
-            <textarea id="msg" name="user_message"></textarea>
+            <textarea id="msg" name="user_message" required></textarea>
         </div>
         <div class="button">
             <button type="submit">Send your message</button>

@@ -36,6 +36,26 @@
     die();
   }
 
+  /*
+foreach ($_POST as $input => $value)
+  {
+    if (empty($value))
+    {
+      exit('Please fill in all fields');
+    }
+  }
+
+  if (!filter_var($_POST['user_mail'], FILTER_VALIDATE_EMAIL))
+    {
+      exit('Please enter a valid email address');
+    }    
+
+  if (!filter_var($_POST['user_phone'], FILTER_SANITIZE_NUMBER_INT))
+    {
+      exit('Please enter a valid phone number');
+    } */
+
+
 ?>
 
 <div class="message">
@@ -51,4 +71,20 @@
 
 
 
+foreach ($_POST as $input => $value)
+  {
+    if (empty($value))
+    {
+      exit('Please fill in all fields');
+    }
+  }
 
+  if (!filter_var($_POST['user_mail'], FILTER_VALIDATE_EMAIL))
+    {
+      exit('Please enter a valid email address');
+    }    
+
+  if (!filter_var($_POST['user_phone'], FILTER_SANITIZE_NUMBER_INT))
+    {
+      exit('Please enter a valid phone number');
+    } 

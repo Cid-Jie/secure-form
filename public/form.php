@@ -14,7 +14,7 @@
     <form action="thanks.php" method="post">
         
         <div>
-            <label for="name">Name&nbsp; :</label>
+            <label for="name">Firstname / Lastname&nbsp; :</label>
             <input type="text" id="name" name="user_name">
         </div>
         <div>
@@ -36,7 +36,7 @@
         </div>
         <div>
             <label for="msg">Message : </label>
-            <textarea id="msg" name="user_message" required></textarea>
+            <textarea id="msg" name="user_message"></textarea>
         </div>
         <div class="button">
             <button type="submit">Send your message</button>
